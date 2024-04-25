@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&display=swap');
+
+body {
+    font-family: inter tight, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--Off-Black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc (100vh - 1px);
+    margin: 10rem;
+}
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+}
+
+.container {
+    background-color: var(--Dark-Grey);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--White);
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--Green);
+    font-weight: 600;
+}
+
+p {
+    color: var(--White);
+    margin-bottom: 0.2rem;
+    font-weight: 400;
+}
+
+li {
+    color: var(--White);
+    font-weight: 500;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 0.5rem;
+    background-color: var(--Grey);
+    margin: 1.5rem;
+    margin-right: 4rem;
+    padding: 1rem;
+    border-color: var(--Grey);    
+}
+
+li:hover {
+    background-color:var(--Green);
+    color: var(--Off-Black);
+    cursor: pointer;
+}
+
+li:active {
+    pointer-events: fill;
+    color:var(--Off-Black);
+}
+
+.attribution {
+    margin: 2rem;
+    font-size: 11px; 
+    text-align: center;
+    color: var(--White);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 350px;
+    }
+}
+
